@@ -8,8 +8,30 @@
 <body>
     <div class= 'container'>
         <div class= 'jumbotron'>
-            <input type="button" onclick="location.href='create';" value="Create An Account!" />
+           <h1>Find All The Recipes You Need!</h1>
+           <p>In development.....</p>
         </div>
+        <input type="button" class="btn btn-primary" onclick="location.href='create';" value="Create An Account!" />
+        <div>
+            <p></p>
+            <h3>List of Users</h3>
+            {% if users %}
+                <ol>
+                {% for user in users %}
+                
+                    <li>{{ user.username }}</li>
+                        <ul>
+                            <li>{{ user.email }}</li>
+                        </ul>
+                {% endfor %}
+                </ol>
+            {% else %}
+                <p>No Users :(</p>
+            {% endif %}
+
+        </div>
+        
+
     </div>
     
 
