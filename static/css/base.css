@@ -1,0 +1,19 @@
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: orange;
+  }
+
+body{
+  background-color: #77B28C;
+}
+
+
+.navbar-custom{
+  background-color: white;
+}
+
+
+
